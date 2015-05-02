@@ -1,5 +1,20 @@
 @import '../public/vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-h1 {
-  color: blue
+#home-view {
+  padding-top: 70px;
+  background-image: url('assets/home.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 12%;
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  button {
+    padding: 2% 10%;
+    border-radius: 30px;
+  }
+
 }
