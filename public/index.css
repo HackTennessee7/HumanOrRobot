@@ -4914,4 +4914,16 @@ button.close {
     font-size: 8rem; }
   #home-view button {
     padding: 2% 10%;
-    border-radius: 30px; }
+    border-radius: 30px;
+    font-size: 2rem; }
+
+#game-view {
+  padding-top: 70px;
+  text-align: center; }
+  #game-view button {
+    padding: 2% 10%;
+    border-radius: 30px;
+    font-size: 2rem; }
+  #game-view img {
+    padding: 10%;
+    margin: 8%; }
