@@ -5,5 +5,6 @@ angular
 .config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/');
   $stateProvider
-    .state('home', {url:'/', templateUrl: 'views/home.html'})
+    .state('home', {url:'/', templateUrl: 'views/home.html', controller:'HomeCtrl'})
+    .state('game', {url:'/game', templateUrl: 'views/game.html'})
 })
