@@ -1,10 +1,10 @@
 .container-fluid
-  #answer-modal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='answerModalLabel' aria-hidden='true')
+  #answer-modal.modal(tabindex='-1' role='dialog' aria-labelledby='answerModalLabel' aria-hidden='true')
     .modal-dialog
       .modal-content
-        .modal-header
-          p You answered Human
-          p The answer is Robot
+        .modal-header(ng-repeat='image in images' ng-show='show == $index')
+          p You answered {{choice}}
+          p The answer is {{image.hof}}
         .modal-body
           p You were incorrect!
           p 2 pts deducted

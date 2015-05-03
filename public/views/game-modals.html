@@ -1,11 +1,11 @@
 
 <div class="container-fluid">
-  <div id="answer-modal" tabindex="-1" role="dialog" aria-labelledby="answerModalLabel" aria-hidden="true" class="modal fade">
+  <div id="answer-modal" tabindex="-1" role="dialog" aria-labelledby="answerModalLabel" aria-hidden="true" class="modal">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <p>You answered Human</p>
-          <p>The answer is Robot</p>
+        <div ng-repeat="image in images" ng-show="show == $index" class="modal-header">
+          <p>You answered {{choice}}</p>
+          <p>The answer is {{image.hof}}</p>
         </div>
         <div class="modal-body">
           <p>You were incorrect!</p>
