@@ -4,53 +4,43 @@ angular
   var images = [
     {
       url: 'assets/img/human/Anastasia.png',
-      hof: 'Human',
-      id: 'anastasia'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Arnold.jpg',
-      hof: 'Human',
-      id: 'arnold'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/C3P0.jpg',
-      hof: 'Human',
-      id: 'C3P0'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Hara.png',
-      hof: 'Human',
-      id: 'hara'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Hiroshi.png',
-      hof: 'Human',
-      id: 'hiroshi'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Justin.png',
-      hof: 'Human',
-      id: 'Justin'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Samantha.png',
-      hof: 'Human',
-      id: 'Samantha'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Sarah.png',
-      hof: 'Human',
-      id: 'Sarah'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Scientist.png',
-      hof: 'Human',
-      id: 'Scientist'
+      hof: 'Human'
     },
     {
       url: 'assets/img/human/Shpagina.jpg',
-      hof: 'Human',
-      id: 'Shpagina'
+      hof: 'Human'
     }
 
   ]
