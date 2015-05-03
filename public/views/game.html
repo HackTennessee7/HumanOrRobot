@@ -13,7 +13,7 @@
     </div>
     <div ng-show="show == $index" ng-repeat="image in images" class="container">
       <div class="row">
-        <div class="col-md-4 col-md-offset-4"><img src="{{image.url}}" class="img-responsive img-circle"></div>
+        <div class="col-md-4 col-md-offset-4"><img src="{{image.url}}" width="300" height="400" class="img-rounded"></div>
       </div>
       <div class="row">
         <button type="button" data-toggle="modal" data-target="#answer-modal" ng-click="human($index)" class="btn btn-large btn-success">Human</button>
