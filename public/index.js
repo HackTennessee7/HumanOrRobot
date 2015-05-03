@@ -6,5 +6,5 @@ angular
   $urlRouterProvider.otherwise('/');
   $stateProvider
     .state('home', {url:'/', templateUrl: 'views/home.html', controller:'HomeCtrl'})
-    .state('game', {url:'/game', templateUrl: 'views/game.html'})
+    .state('game', {url:'/game', templateUrl: 'views/game.html', controller:'GameController'})
 })
