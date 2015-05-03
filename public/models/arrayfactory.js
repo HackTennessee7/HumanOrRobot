@@ -44,5 +44,8 @@ angular
     }
 
   ]
+
+  images = _.shuffle(images)
+  
   return images
 });
