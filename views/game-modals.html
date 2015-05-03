@@ -1,0 +1,19 @@
+
+<div class="container-fluid">
+  <div id="answer-modal" tabindex="-1" role="dialog" aria-labelledby="answerModalLabel" aria-hidden="true" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div ng-repeat="image in images" ng-show="show == $index" class="modal-header">
+          <p>You answered {{choice}}</p>
+          <p>The answer is {{image.hof}}</p>
+        </div>
+        <div class="modal-body">
+          <p>{{result}}!</p>
+        </div>
+        <div class="modal-footer">
+          <button data-dismiss="modal" ng-click="nextImage()" class="btn btn-default">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
