@@ -4916,6 +4916,9 @@ button.close {
     border-radius: 30px;
     font-size: 2rem; }
 
+#answer-modal h2 {
+  color: red; }
+
 #home-view {
   padding-top: 70px;
   background-image: url('assets/home.jpg');

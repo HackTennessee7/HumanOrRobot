@@ -5,7 +5,7 @@ angular
   if ($rootScope.score < 30) {
     $scope.message = 'Meh'
   } else {
-    $scope.message = 'You know your robots!'
+    $scope.message = 'You may be the next Alan Turing!'
     console.log($rootScope.score)
   }
 

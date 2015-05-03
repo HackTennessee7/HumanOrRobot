@@ -4,11 +4,12 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div ng-repeat="image in images" ng-show="show == $index" class="modal-header">
-          <p>You answered {{choice}}</p>
-          <p>The answer is {{image.hof}}</p>
+          <H1>You answered: {{choice}}</H1>
+          <H1>The answer is: {{image.hof}}</H1>
+          <H2>{{image.des}}</H2>
         </div>
         <div class="modal-body">
-          <p>{{result}}!</p>
+          <H1>{{result}}</H1>
         </div>
         <div class="modal-footer">
           <button data-dismiss="modal" ng-click="nextImage()" class="btn btn-default">Next</button>

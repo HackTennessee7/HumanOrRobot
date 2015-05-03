@@ -3,10 +3,10 @@
     .modal-dialog
       .modal-content
         .modal-header(ng-repeat='image in images' ng-show='show == $index')
-          p You answered {{choice}}
-          p The answer is {{image.hof}}
+          H1 You answered: {{choice}}
+          H1 The answer is: {{image.hof}}
+          H2 {{image.des}}
         .modal-body
-          p {{result}}!
+          H1 {{result}}
         .modal-footer
           button.btn.btn-default(data-dismiss='modal' ng-click='nextImage()') Next
-      

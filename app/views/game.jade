@@ -9,7 +9,7 @@
     .container(ng-show="show == $index" ng-repeat="image in images")
       .row
         .col-md-4.col-md-offset-4
-          img.img-rounded(src='{{image.url}}',width=300,height=400)
+          img.img-rounded(src='{{image.url}}')
       .row
         button.btn.btn-large.btn-success(type='button' data-toggle='modal' data-target='#answer-modal' ng-click='human($index)') Human
         button.btn.btn-large.btn-warning(type='button' data-toggle='modal' data-target='#answer-modal' ng-click='robot($index)') Robot
