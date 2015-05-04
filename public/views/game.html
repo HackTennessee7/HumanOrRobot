@@ -1,0 +1,43 @@
+
+<div class="containter-fluid">
+  <div id="game-view">
+    <div class="row">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <h2 class="navbar-right">score: {{score}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h1>Human or Robot?</h1>
+    </div>
+    <div ng-show="show == $index" ng-repeat="image in images" class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4"><img src="{{image.url}}" class="img-rounded"></div>
+      </div>
+      <div class="row">
+        <button type="button" data-toggle="modal" data-target="#answer-modal" ng-click="human($index)" class="btn btn-large btn-success">Human</button>
+        <button type="button" data-toggle="modal" data-target="#answer-modal" ng-click="robot($index)" class="btn btn-large btn-warning">Robot</button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="answer-modal" tabindex="-1" role="dialog" aria-labelledby="answerModalLabel" aria-hidden="true" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div ng-repeat="image in images" ng-show="show == $index" class="modal-header">
+              <H1>You answered: {{choice}}</H1>
+              <H1>The answer is: {{image.hof}}</H1>
+              <H2>{{image.des}}</H2>
+            </div>
+            <div class="modal-body">
+              <H1>{{result}}</H1>
+            </div>
+            <div class="modal-footer">
+              <button data-dismiss="modal" ng-click="nextImage()" class="btn btn-default">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
